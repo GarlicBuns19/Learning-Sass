@@ -20,4 +20,8 @@ $base-border-radius:20px;
 $base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 
 // font-size
-$base-font-size: 1rem //16px
+$base-font-size: 1rem; //16px
+$font-size-sm: $base-font-size * 0.55;
+$font-size-lg: $base-font-size * 0.95;
+$font-size-xl: $base-font-size * 1.35;
+$font-size-xxl: $base-font-size * 1.95;
