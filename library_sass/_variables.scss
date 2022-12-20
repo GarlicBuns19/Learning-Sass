@@ -4,6 +4,24 @@ $secondary: #0c990c;
 $error:#c81d1d;
 $info:#e6e61a;
 
+// color palette
+$colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "error": $error,
+    "info": $info,
+    "sand": #e6831a
+);
+
+.test-btn{
+    background-color: map-get($colors,sand)
+}
+
+@debug map-get($colors,sand );
+@debug map-has-key($colors,sand);
+@debug map-remove($colors,sand);
+@debug map-merge($colors,('test':black));
+
 // base margin & padding
 $base-margin:20px;
 $base-padding:0.75rem;
