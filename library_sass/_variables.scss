@@ -4,7 +4,7 @@ $secondary: #0c990c;
 $error:#c81d1d;
 $info:#e6e61a;
 
-// color palette
+// color palette map
 $colors: (
     "primary": $primary,
     "secondary": $secondary,
@@ -18,10 +18,10 @@ $colors: (
     background-color: map-get($colors,sand)
 }
 
-@debug map-get($colors,sand );
-@debug map-has-key($colors,sand);
-@debug map-remove($colors,sand);
-@debug map-merge($colors,('test':black));
+// @debug map-get($colors,sand );
+// @debug map-has-key($colors,sand);
+// @debug map-remove($colors,sand);
+// @debug map-merge($colors,('test':black));
 
 // base margin & padding
 $base-margin:20px;
