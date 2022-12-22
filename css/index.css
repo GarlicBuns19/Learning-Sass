@@ -10,6 +10,7 @@
 }
 
 body {
+  background-color: #f2ecec;
   font-family: Poppins;
 }
 
@@ -73,6 +74,62 @@ img {
 .row {
   display: flex;
   flex-flow: row wrap;
+}
+
+.gap-0 > * {
+  padding: 0px;
+}
+
+.gap-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.gap-1 > * {
+  padding: 10px;
+}
+
+.gap-1 {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.gap-2 > * {
+  padding: 20px;
+}
+
+.gap-2 {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.gap-3 > * {
+  padding: 30px;
+}
+
+.gap-3 {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.justify-flex-start {
+  justify-content: flex-start;
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
 }
 
 @media (min-width: 0) {
@@ -1816,6 +1873,45 @@ img {
 .btn-complement-sand:hover {
   color: #e6831a;
   background-color: #a4cbf5;
+}
+
+.navbar .container, .navbar-sand .container, .navbar-white .container, .navbar-info .container, .navbar-error .container, .navbar-secondary .container, .navbar-primary .container, .navbar, .navbar-sand, .navbar-white, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.navbar, .navbar-sand, .navbar-white, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
+  padding: 0.75rem 1.5rem;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar .site-title, .navbar-sand .site-title, .navbar-white .site-title, .navbar-info .site-title, .navbar-error .site-title, .navbar-secondary .site-title, .navbar-primary .site-title {
+  font-size: 0.95rem;
+}
+.navbar-primary {
+  background-color: #4b4bd5;
+}
+
+.navbar-secondary {
+  background-color: #0c990c;
+}
+
+.navbar-error {
+  background-color: #c81d1d;
+}
+
+.navbar-info {
+  background-color: #e6e61a;
+}
+
+.navbar-white {
+  background-color: white;
+}
+
+.navbar-sand {
+  background-color: #e6831a;
 }
 
 .p-0 {

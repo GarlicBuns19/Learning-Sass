@@ -1,6 +1,15 @@
 @use "sass:math";
 
 $grid-columns: 12;
+$grid-gaps:(
+  "0":0px,
+  "1":10px,
+  "2":20px,
+  "3":30px,
+);
+
+// This is a list similar to a map but with no key value pairs. It uses commas.
+$layout-values: flex-start, flex-end, center, space-between, space-around;
 
 // base layout classes
 .container {
@@ -13,6 +22,26 @@ $grid-columns: 12;
 .row {
   display: flex;
   flex-flow: row wrap;
+}
+// col gaps
+@each $key,$val in $grid-gaps{
+  // @debug $key;
+  // @debug $val;
+  .gap-#{$key} > *{
+    padding: $val;
+  }
+  .gap-#{$key}{
+    margin-left: -$val;
+    margin-right: -$val;
+  }
+}
+
+// justify content classes
+@each $val in $layout-values{
+  .justify-#{$val}{
+    justify-content: $val
+  }
+  // @debug $val;
 }
 
 // col classes
