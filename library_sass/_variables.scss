@@ -1,8 +1,9 @@
 // variables
-$primary: #4b4bd5;
-$secondary: #0c990c;
-$error:#c81d1d;
-$info:#e6e61a;
+// default if nothing is stated it use the the defauylt value,$primary : pink then #4b4bd5 wont be used
+$primary: #4b4bd5 !default;
+$secondary: #0c990c !default;
+$error:#c81d1d !default;
+$info:#e6e61a !default;
 
 // color palette map
 $colors: (
