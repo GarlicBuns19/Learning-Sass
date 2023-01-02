@@ -159,6 +159,12 @@ $utilities: (
       "xl": $font-size-xl,
       "xxl": $font-size-xxl
     )
+  ),
+  "cursor": (
+    "prefix": "cursor",
+    "values": (
+      "p": pointer
+    )
   )
 );
 

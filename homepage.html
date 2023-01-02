@@ -5,42 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Testing library</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <div class="p-3 bg-error-dark-1">
-        <h2 class="font-lg">This is a home page</h2>
+    <!-- navbar -->
+    <nav class="navbar-primary">
+        <div class="container">
+            <h1 class="site-title text-white">DesignWall</h1>
+            <ul class="display-f">
+                <li class="ml-1 text-white text-hover-info-dark-1 cursor-p"><a href="/index.html">The Library</a></li>
+                <li class="ml-1 text-white text-hover-info-dark-1 cursor-p"><a href="#work">Our Work</a></li>
+                <li class="ml-1 text-white text-hover-info-dark-1 cursor-p"><a href="#about">About us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- intro -->
+    <div class="container p-2">
+        <h1>Design Wallpapers</h1>
+        <h1 class="text-secondary mt-1 mb-1">Explore Below</h1>
+        <button class="btn-outlined-primary text-hover-white"><a href="#work">Our Work</a></button>
     </div>
-    <div class="container">
-        <div class="row gap-1 justify-center">
-            <div class="col-12-xs col-6-md col-3-xl">
-                <div class="card p-1">
-                    <h3 class="card-title pb-1">This is a card</h3>
-                    <p class="card-body">This is a card body</p>
-                </div>
+    <!-- about -->
+    <section class="bg-primary-light-8">
+        <div class="container p-2">
+            <h2>About DesignWall</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel fugiat magni perspiciatis cum architecto ullam vitae dolore, atque, quia, doloremque similique animi cumque. Minus error maiores quasi impedit debitis.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa vel fugiat magni perspiciatis cum architecto ullam vitae dolore, atque, quia, doloremque similique animi cumque. Minus error maiores quasi impedit debitis.</p>
+        </div>
+    </section>
+    <!-- work -->
+    <div class="container" id="work">
+        <div class="row justify-center gap-1">
+            <div class="col-4-md col-6-sm col-12-xs">
+                <h2 class="font-xl">Eagle</h2>
+                <img src="./images/bird.png" alt="eagle">
+                <p>A wallpaper of an eagle looking into the distance</p>
             </div>
-            <div class="col-12-xs col-6-md col-3-xl">
-                <div class="card p-1">
-                    <h3 class="card-title pb-1">This is a card</h3>
-                    <p class="card-body">This is a card body</p>
-                </div>
+            <div class="col-4-md col-6-sm col-12-xs">
+                <h2 class="font-xl">Eye</h2>
+                <img src="./images/eye.png" alt="eye">
+                <p>A wallpaper of an eye reprenting a hole in space surronded by space clouds</p>
             </div>
-            <div class="col-12-xs col-6-md col-3-xl">
-                <div class="card p-1">
-                    <h3 class="card-title pb-1">This is a card</h3>
-                    <p class="card-body">This is a card body</p>
-                </div>
-            </div>
-            <div class="col-12-xs col-6-md col-3-xl">
-                <div class="card p-1">
-                    <h3 class="card-title pb-1">This is a card</h3>
-                    <p class="card-body">This is a card body</p>
-                </div>
+            <div class="col-4-md col-6-sm col-12-xs">
+                <h2 class="font-xl">Space Hole</h2>
+                <img src="./images/hole.png" alt="hole">
+                <p>A wallpaper of a space hole appearing in the sky</p>
             </div>
         </div>
     </div>
+    <!-- footer -->
+    <footer class="mt-3 bg-primary-light-8 p-1">
+        <h3 class="font-lg" id="footer"></h3>
+    </footer>
+
+    <script>
+        const footer = document.querySelector('footer');
+        const year = new Date().getFullYear();
+        
+        footer.style = `text-align:center;`;
+        footer.innerHTML = `Copyright &copy Ra\'ees Benny ${year}`;
+    </script>
 </body>
 
 </html>

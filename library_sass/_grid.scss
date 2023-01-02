@@ -10,6 +10,7 @@ $grid-gaps:(
 
 // This is a list similar to a map but with no key value pairs. It uses commas.
 $layout-values: flex-start, flex-end, center, space-between, space-around;
+$text-values: left,center,right;
 
 // base layout classes
 .container {
@@ -42,6 +43,13 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     justify-content: $val
   }
   // @debug $val;
+}
+
+// text align classes
+@each $val in $text-values{
+  .text-#{$val}{
+    text-align: $val
+  }
 }
 
 // col classes
